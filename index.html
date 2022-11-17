@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <h1 style="text-align:center">Welcome to My Library</h1>  
+
+        <section id="cards-section">
+ 
+        </section>
+
+        <section id="form-section">
+            <h1 style="text-align: center">Add Book</h1>
+            <form action="" method="POST" style="text-align:center;margin-bottom:20px;" id="form">
+
+                <!-- for and id need to be the same -->
+                <!-- name is sent to the server -->
+                <div>
+                    <!-- <label for="author">Author:</label> -->
+                <input type="text" id="author" name="author" placeholder="Author...">
+                </div>
+              
+
+                <div>
+                    <!-- <label for="title">Title:</label> -->
+                <input type="text" name="title" id="title" placeholder="Title...">
+                </div>
+               
+
+                <div>
+                    <!-- <label for="pages">Pages:</label> -->
+                <input type="number" id="pages" name="pages" placeholder="Number of pages...">
+                </div>
+
+                <div>
+                    <label for="has-read" id="has-read">Have you read this book yet?</label>
+                <input type="radio" id="yes" name="has-read" value="yes" checked>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="has-read" value="no">
+                <label for="no">No</label>
+                </div>
+
+                <button type="submit" id="book-btn">Add Book!</button>
+            </form>
+        </section>
+    </main>
+	<script src="library.js"></script>
+  </body>
+</html>
